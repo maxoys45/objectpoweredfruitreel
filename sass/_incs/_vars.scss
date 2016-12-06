@@ -1,0 +1,38 @@
+// COLORS
+
+$black : #000000;
+$dark : #222222;
+$darker : #111111;
+$light : #BDBDBD;
+$white : #FFFFFF;
+
+$beige: #d6c9a1;
+$beige: #e5bba5; // closer to bg colour beige
+
+$brown: #a08261;
+$pink: #aa243b;
+$maroon: #6b2727;
+$gold: #FFD700;
+$warning: #c12d2d;
+
+// FONTS
+
+$font-alt : "kepler-std-semicondensed-dis", Arial, sans-serif;
+$font-default : "anonymous-pro", sans-serif; // 400 + 700 + italic
+
+// WEIGHTS
+
+//$font-light : 300;
+$font-reg : 400;
+//$font-med : 500;
+$font-semibold : 600;
+$font-bold : 700;
+//$font-xbold : 800;
+
+// SCREEN SIZES
+
+$scr-small : 800;
+$scr-wrap : 960;
+$scr-desktop : 1024;
+$scr-large : 1440;
+$scr-hd : 1920;

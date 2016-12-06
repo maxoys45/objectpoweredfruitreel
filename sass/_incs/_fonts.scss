@@ -1,0 +1,42 @@
+// OPEN SANS
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic,600italic,700italic);
+
+// ICOMOON
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon/icomoon.eot?qxumrc');
+    src:    url('../fonts/icomoon/icomoon.eot?qxumrc#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?qxumrc') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?qxumrc') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?qxumrc#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon-pacman {
+	content: "\e96e";
+}
+.icon-chess-knight {
+	content: "\e976";
+}
+.icon-coins {
+	content: "\ea0a";
+}
+.icon-cake {
+	content: "\eb9c";
+}
+.icon-trophy3 {
+	content: "\eba8";
+}
+.icon-cheese {
+	content: "\ebc4";
+}
+.icon-toiletpaper {
+	content: "\ebfc";
+}
+.icon-star-empty {
+	content: "\ece0";
+}
+

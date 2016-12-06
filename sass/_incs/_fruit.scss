@@ -1,0 +1,295 @@
+*, *:before, *:after {
+	box-sizing : border-box;
+}
+
+html {
+	font-size   : 10px;
+	font-family : Helvetica, Arial, sans-serif;
+}
+
+.reel-outer {
+	background : black;
+	position   : relative;
+	border     : .2rem solid black;
+	width      : 20.4rem;
+	height     : 20.4rem;
+	overflow   : hidden;
+	cursor     : pointer;
+}
+
+.reel {
+	position : absolute;
+	top      : 0;
+	left     : 20rem;
+	display  : flex;
+}
+
+.symbol-group {
+	display : flex;
+	height  : 20rem;
+}
+
+.symbol {
+	height      : 100%;
+	width       : 20rem;
+	text-align  : center;
+	font-size   : 1.2rem;
+	color       : white;
+	font-weight : bold;
+	background  : gray;
+}
+
+.symbol:nth-child(2n) {
+	background : rgb(100, 100, 100);
+}
+
+.symbol:before {
+	content        : '';
+	display        : inline-block;
+	height         : 100%;
+	vertical-align : middle;
+}
+
+.symbol span {
+	padding        : 0 1rem;
+	display        : inline-block;
+	vertical-align : middle;
+}
+
+.startBlock {
+	position    : relative;
+	opacity     : 1;
+	width       : 20rem;
+	height      : 20rem;
+	line-height : 20rem;
+	text-align  : center;
+	font-size   : 1.2rem;
+	color       : white;
+	font-weight : bold;
+	background  : black;
+}
+
+/*.symbol:nth-child(4n + 1) {
+    background:red;
+}
+
+.symbol:nth-child(4n + 2) {
+    background:blue;
+}
+
+.symbol:nth-child(4n + 3) {
+    background:green;
+}
+
+.symbol:nth-child(4n + 4) {
+    background:brown;
+}*/
+
+.title {
+	display        : inline-block;
+	vertical-align : middle;
+	font-size      : 1.4rem;
+	border-bottom  : .1rem solid black;
+	padding-bottom : .5rem;
+	margin-bottom  : .5rem;
+}
+
+.rollBtn {
+	margin-top : 1rem;
+	width      : 20.4rem;
+}
+
+.odds {
+	margin-top : 1rem;
+}
+
+.odd {
+	display       : block;
+	margin-bottom : .5rem;
+	font-size     : 1.2rem;
+	font-weight   : bold;
+}
+
+/***********************************************************/
+/************************************************* 3D CUBE */
+
+.scene {
+	position    : relative;
+	width       : 20rem;
+	height      : 20rem;
+	margin      : 6rem 2rem;
+	perspective : 120rem;
+	perspective : 15rem;
+	display     : block;
+
+	//width:210px;
+	//height:140px;
+
+	//-webkit-perspective: 1100px;
+	//-moz-perspective: 1100px;
+	//-o-perspective: 1100px;
+	//perspective: 1100px;
+
+	//width: 210px;
+	//height: 140px;
+	//position: relative;
+	//margin: 0 auto 40px;
+	//border: 1px solid #CCC;
+	//-webkit-perspective: 1100px;
+	//-moz-perspective: 1100px;
+	//-o-perspective: 1100px;
+	//perspective: 1100px;
+
+	//display : block;
+	//width: 210px;
+	//height: 140px;
+	//position: relative;
+	//margin: 0 auto 40px;
+	//border: 1px solid #CCC;
+	//-webkit-perspective: 1100px;
+	//-moz-perspective: 1100px;
+	//-o-perspective: 1100px;
+	//perspective: 1100px;
+
+}
+
+.cube {
+	position        : absolute;
+	width           : 100%;
+	height          : 100%;
+	transform-style : preserve-3d;
+}
+
+.side {
+	position            : absolute;
+	width               : 20rem;
+	height              : 20rem;
+	//box-sizing: border-box;
+	border              : .5rem solid #99AAAA;
+	background-color    : rgba(32, 170, 151, 1);
+	background-color    : lighten(#292929, 15%);
+	font-size           : 10rem;
+	padding             : 4.5rem 0;
+	color               : #FFFFFF;
+	text-transform      : uppercase;
+	text-align          : center;
+	background-repeat   : no-repeat;
+	background-position : center center;
+	background-size     : 60%;
+
+	img {
+		height : 100%;
+	}
+
+	&.side-2 {
+		border-color : $gold;
+	}
+	/*display: block;
+	position: absolute;
+	width: 186px;
+	height: 116px;
+	left: 10px;
+	top: 10px;
+	border: 2px solid black;
+	line-height: 116px;
+	font-size: 80px;
+	font-weight: bold;
+	color: white;
+	text-align: center;*/
+}
+
+/*
+.side-1 {
+	//transform: rotateX(0deg) translateZ(10rem);
+	//transform: rotateX(0deg) translateZ(24.14213562373095rem);
+
+	//transform: rotateX(0deg) translateZ(70px);
+
+	&:after {
+		content: "\e96e";
+	}
+}
+.side-2 {
+	//transform: rotateX(90deg) translateZ(10rem);
+	//transform: rotateX(45deg) translateZ(24.14213562373095rem);
+
+	//transform: rotateX(90deg) translateZ(70px);
+
+	&:after {
+		content: "\e976";
+	}
+}
+.side-3 {
+	//transform: rotateX(180deg) translateZ(10rem);
+	//transform: rotateX(90deg) translateZ(24.14213562373095rem);
+
+	//transform: rotateX(180deg) translateZ(70px);
+
+	&:after {
+		content: "\ea0a";
+	}
+}
+.side-4 {
+	//transform: rotateX(270deg) translateZ(10rem);
+	//transform: rotateX(135deg) translateZ(24.14213562373095rem);
+
+	//transform: rotateX(270deg) translateZ(70px);
+
+	&:after {
+		content: "\eb9c";
+	}
+}
+
+.side-5 {
+	//transform: rotateX(270deg) translateZ(10rem);
+	//transform: rotateX(180deg) translateZ(24.14213562373095rem);
+
+	//transform: rotateX(270deg) translateZ(70px);
+
+	&:after {
+		content: "\eba8";
+	}
+}
+
+.side-6 {
+	//transform: rotateX(270deg) translateZ(10rem);
+	//transform: rotateX(225deg) translateZ(24.14213562373095rem);
+
+	//transform: rotateX(270deg) translateZ(70px);
+
+	&:after {
+		content: "\ebc4";
+	}
+}
+
+.side-7 {
+	//transform: rotateX(270deg) translateZ(10rem);
+	//transform: rotateX(270deg) translateZ(24.14213562373095rem);
+
+	//transform: rotateX(270deg) translateZ(70px);
+
+	&:after {
+		content: "\ebfc";
+	}
+}
+
+.side-8 {
+	//transform: rotateX(270deg) translateZ(10rem);
+	//transform: rotateX(315deg) translateZ(24.14213562373095rem);
+
+	//transform: rotateX(270deg) translateZ(70px);
+
+	&:after {
+		content: "\ece0";
+	}
+}
+
+.side-back, .side-bottom {
+	background-color: rgba(105, 136, 190, 1)
+}*/
+
+/*
+@keyframes example {
+	100% { transform: translateZ(-10rem) rotateX(360deg); }
+}
+*/
