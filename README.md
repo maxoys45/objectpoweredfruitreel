@@ -5,5 +5,8 @@ Wanted to create a "3D" fruit reel that could be dynamically generated from a JS
 
 Each item added to the object regenerates the 3d shape.
 
-#TODO
+# Todo
 - Add input fields so items can be added on the fly
+
+# Demo
+http://maxhenchman.co.uk/fruitreel_v2/
